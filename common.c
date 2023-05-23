@@ -435,7 +435,7 @@ void check_overflow(unsigned int val1, unsigned int val2,
 		(((unsigned long long)UINT_MAX / (unsigned long long)val1 <
 		(unsigned long long)val2) ||
 		((unsigned long long)UINT_MAX / ((unsigned long long)val1 *
-		(unsigned long long)val2) < (unsigned long long)val3)) {
+		(unsigned long long)val2) < (unsigned long long)val3))) {
 #ifdef DEBUG
 		fprintf(stderr, "%s: Overflow detected (%llu). Aborting...\n",
 			__FUNCTION__, (unsigned long long) val1 * (unsigned long long) val2 *
